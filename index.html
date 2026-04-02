@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hartwell &amp; Partners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Epilogue:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════════════
+     NAV
+     ══════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#" onclick="showPage('home')">
+      <div class="nav-logo-name" id="nav-logo-name">Hartwell &amp; Partners</div>
+      <div class="nav-logo-sub" id="nav-logo-sub">Attorneys at Law</div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" onclick="showPage('home')"    class="active" id="nav-home"    data-i18n="nav.home">Home</a></li>
+      <li><a href="#" onclick="showPage('about')"   id="nav-about"   data-i18n="nav.about">About</a></li>
+      <li><a href="#" onclick="showPage('areas')"   id="nav-areas"   data-i18n="nav.areas">Practice Areas</a></li>
+      <li><a href="#" onclick="showPage('contact')" id="nav-contact" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta-wrap" style="display:flex;align-items:center;gap:16px;">
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn"        id="btn-pl" onclick="setLang('pl')">PL</button>
+      </div>
+      <a class="btn btn-dark" href="#" onclick="showPage('contact')" id="nav-cta-btn">Free consultation</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════
+     PAGE: HOME
+     ══════════════════ -->
+<div class="page active" id="page-home">
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="eyebrow" id="hero-established"></div>
+      <h1 class="display display-xl hero-title" id="hero-title"></h1>
+      <p class="hero-lead" id="hero-lead"></p>
+      <div class="hero-actions">
+        <a class="btn btn-dark"  href="#" onclick="showPage('contact')" data-i18n="ctaBtn">Book a consultation</a>
+        <a class="btn btn-ghost" href="#" onclick="showPage('areas')"   data-i18n="practiceAreasEyebrow">Our practice areas</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <!-- Replace this placeholder with: <img src="assets/hero.jpg" alt="Hartwell & Partners"> -->
+      <div class="hero-photo-placeholder">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width=".8"><rect x="4" y="4" width="32" height="32" rx="1"/><path d="M4 14h32M14 14v22"/></svg>
+        <span>Hero photo — see assets/README.md</span>
+      </div>
+      <div class="hero-badge" id="hero-badge"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-bar" id="marquee-bar"></div>
+
+  <!-- Intro split -->
+  <section class="section">
+    <div class="wrap">
+      <div class="intro-split">
+        <div class="intro-image">
+          <!-- Replace with: <img src="assets/office.jpg" alt="Our office"> -->
+          <div class="img-ph">Office photo — see assets/README.md</div>
+        </div>
+        <div>
+          <div class="eyebrow" id="home-about-firm">About the firm</div>
+          <h2 class="display display-lg" id="home-intro-head"></h2>
+          <div class="rule"></div>
+          <p style="color:var(--c-text-muted);font-weight:300;margin-bottom:32px;" id="home-about-body"></p>
+          <a class="btn btn-ghost" href="#" onclick="showPage('about')" id="home-meet-team">Meet the team</a>
+          <div class="intro-stat" id="intro-stats"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice areas preview -->
+  <section style="padding-bottom:104px;">
+    <div class="wrap">
+      <div class="eyebrow" id="home-what-we-do">What we do</div>
+      <h2 class="display display-lg" id="home-practice-head" style="margin-bottom:40px;">Our practice <em>areas</em></h2>
+      <div class="areas-preview" id="areas-preview"></div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="testimonial-section">
+    <div class="wrap">
+      <div class="testimonial-inner">
+        <div class="t-mark">&ldquo;</div>
+        <p class="t-quote" id="t-quote"></p>
+        <div class="t-rule"></div>
+        <p class="t-author" id="t-author"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip -->
+  <section class="cta-strip">
+    <div class="wrap">
+      <div class="cta-strip-inner">
+        <div class="cta-strip-text">
+          <h2 class="display display-md" id="cta-title" data-i18n="ctaTitle">Ready to discuss your matter?</h2>
+          <p id="cta-desc" data-i18n="ctaDesc">Your first 30-minute consultation is complimentary and without obligation.</p>
+        </div>
+        <a class="btn btn-dark" href="#" onclick="showPage('contact')" id="cta-btn" style="flex-shrink:0;" data-i18n="ctaBtn">Book a free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer-home">
+    <div class="wrap">
+      <div class="footer-top" id="footer-top-home"></div>
+      <div class="footer-bottom">
+        <span id="footer-copy-home"></span>
+        <span class="footer-disclaimer" id="footer-disc-home"></span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════════
+     PAGE: ABOUT
+     ══════════════════ -->
+<div class="page" id="page-about">
+
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="page-hero-inner">
+        <div class="eyebrow" data-i18n="aboutPageEyebrow">Our firm</div>
+        <h1 class="display display-xl" data-i18n="aboutPageHero">Twenty-five years of <em>trusted</em> counsel.</h1>
+        <div class="rule"></div>
+        <p style="color:var(--c-text-muted);font-weight:300;" id="about-intro-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="about-split">
+        <div>
+          <div class="eyebrow" id="about-story-eyebrow" data-i18n="ourStory">Our story</div>
+          <h2 class="display display-md" style="margin-bottom:24px;" data-i18n="builtOnPrinciple">Built on principle. <em>Driven</em> by results.</h2>
+          <div class="about-body" id="about-body-text"></div>
+        </div>
+        <div>
+          <div class="eyebrow" id="about-values-eyebrow" data-i18n="ourValues">Our values</div>
+          <div class="values-list" id="values-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--c-bg-soft);padding:96px 0;border-top:1px solid var(--c-border);">
+    <div class="wrap">
+      <div class="eyebrow" id="about-team-eyebrow" data-i18n="theTeam">The team</div>
+      <h2 class="display display-lg" id="about-team-head" style="margin-bottom:56px;">Meet our <em>attorneys</em></h2>
+      <div class="team-grid" id="team-grid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-top" id="footer-top-about"></div>
+      <div class="footer-bottom">
+        <span id="footer-copy-about"></span>
+        <span class="footer-disclaimer" id="footer-disc-about"></span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════════
+     PAGE: PRACTICE AREAS
+     ══════════════════ -->
+<div class="page" id="page-areas">
+
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="page-hero-inner">
+        <div class="eyebrow" id="areas-eyebrow">Expertise</div>
+        <h1 class="display display-xl" id="areas-hero-title" data-i18n="expertiseHero">Full-service legal <em>expertise</em>.</h1>
+        <div class="rule"></div>
+        <p style="color:var(--c-text-muted);font-weight:300;" id="areas-hero-desc" data-i18n="expertiseDesc">From personal matters to complex corporate transactions — we have the specialist expertise to advise you with confidence.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" style="padding-bottom:0;">
+    <div class="wrap">
+      <div class="eyebrow" id="areas-practice-eyebrow">Practice areas</div>
+      <h2 class="display display-lg" id="areas-where-head">Where we <em>practise</em></h2>
+      <div class="areas-full" id="areas-full"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow" id="areas-why-eyebrow">Why choose us</div>
+      <h2 class="display display-lg" id="areas-why-head">The Hartwell <em>difference</em></h2>
+      <div class="why-grid" id="why-grid"></div>
+    </div>
+  </section>
+
+  <section style="padding-bottom:104px;">
+    <div class="wrap">
+      <div class="eyebrow" id="areas-how-eyebrow">How we work</div>
+      <h2 class="display display-lg" id="areas-process-head" style="margin-bottom:0;">Our <em>process</em></h2>
+      <div class="process-steps" id="process-steps"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-top" id="footer-top-areas"></div>
+      <div class="footer-bottom">
+        <span id="footer-copy-areas"></span>
+        <span class="footer-disclaimer" id="footer-disc-areas"></span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════════
+     PAGE: CONTACT
+     ══════════════════ -->
+<div class="page" id="page-contact">
+
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="page-hero-inner">
+        <div class="eyebrow" id="contact-eyebrow">Get in touch</div>
+        <h1 class="display display-xl" data-i18n="contactHero">Let's discuss your <em>matter</em>.</h1>
+        <div class="rule"></div>
+        <p style="color:var(--c-text-muted);font-weight:300;" data-i18n="contactDesc">Your first 30-minute consultation is complimentary. We will assess your situation honestly and outline your options — with no obligation to proceed.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="contact-layout">
+
+      <!-- Info -->
+      <div class="contact-info">
+        <div class="contact-block">
+          <div class="contact-block-label" data-i18n="addressLabel">Address</div>
+          <div class="contact-block-value" id="c-address"></div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label" data-i18n="phoneLabel">Telephone</div>
+          <div class="contact-block-value" id="c-phone"></div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label" data-i18n="emailLabel">Email</div>
+          <div class="contact-block-value" id="c-email"></div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label" data-i18n="hoursLabel">Office hours</div>
+          <div class="hours-rows" id="c-hours"></div>
+        </div>
+        <!-- Replace the placeholder below with a real Google Maps iframe -->
+        <div class="map-ph" data-i18n="mapPlaceholder">↑ Embed Google Maps iframe here</div>
+      </div>
+
+      <!-- Form -->
+      <div class="consult-form">
+        <div id="cf-view">
+          <div class="form-head">
+            <h2 data-i18n="formTitle">Request a consultation</h2>
+            <p data-i18n="formDesc">Complete the form and a member of our team will be in touch within one business day.</p>
+          </div>
+
+          <div class="f-grid-2">
+            <div class="f-group">
+              <label for="cf-first" data-i18n="firstName">First name</label>
+              <input type="text" id="cf-first" placeholder="Jan" />
+            </div>
+            <div class="f-group">
+              <label for="cf-last" data-i18n="lastName">Last name</label>
+              <input type="text" id="cf-last" placeholder="Kowalski" />
+            </div>
+          </div>
+
+          <div class="f-group">
+            <label for="cf-email" data-i18n="emailField">Email address</label>
+            <input type="email" id="cf-email" placeholder="jan@example.com" />
+          </div>
+
+          <div class="f-group">
+            <label for="cf-phone" data-i18n="phoneField">Phone number</label>
+            <input type="tel" id="cf-phone" placeholder="+48 …" />
+          </div>
+
+          <div class="f-group">
+            <label for="cf-matter" data-i18n="matterField">Area of law</label>
+            <select id="cf-matter">
+              <option value="">Select an area…</option>
+            </select>
+          </div>
+
+          <div class="f-group">
+            <label for="cf-msg" data-i18n="messageField">Brief description of your matter</label>
+            <textarea id="cf-msg" placeholder="Please describe your situation in a few sentences. All information is treated as strictly confidential."></textarea>
+          </div>
+
+          <div class="f-group">
+            <label for="cf-date" data-i18n="dateField">Preferred consultation date</label>
+            <input type="date" id="cf-date" />
+          </div>
+
+          <p class="f-note" data-i18n="formNote">All enquiries are treated as strictly confidential. Submitting this form does not create an attorney-client relationship.</p>
+          <button class="btn btn-dark" onclick="submitConsult()" style="width:100%;" data-i18n="submitBtn">Submit enquiry</button>
+        </div>
+
+        <div class="form-success-msg" id="cf-success">
+          <div class="eyebrow" style="justify-content:center;" data-i18n="successEyebrow">Enquiry received</div>
+          <h3 class="display display-md" style="margin-bottom:8px;" data-i18n="successTitle">Thank you.</h3>
+          <div class="success-line"></div>
+          <p style="color:var(--c-text-muted);font-weight:300;font-size:.9rem;" data-i18n="successMsg">A member of our team will be in touch within one business day to confirm your consultation. All correspondence is strictly confidential.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-top" id="footer-top-contact"></div>
+      <div class="footer-bottom">
+        <span id="footer-copy-contact"></span>
+        <span class="footer-disclaimer" id="footer-disc-contact"></span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
