@@ -5,13 +5,13 @@
 
 const CONFIG_EN = {
   firm: {
-    name:        "Hartwell & Partners",
+    name:        "Nowak & Partners",
     tagline:     "Attorneys at Law",
     established: "Est. 1998",
     description: "A full-service law firm committed to delivering clear, principled legal counsel across every area of practice. We combine decades of courtroom experience with a modern, client-first approach.",
     address:     "ul. Złota 59, 00-120 Warsaw",
     phone:       "+48 22 456 78 90",
-    email:       "contact@hartwellpartners.pl",
+    email:       "contact@nowakpartners.pl",
     heroTitle:   "Principled counsel. <em>Exceptional</em> outcomes.",
     heroSubtitle:"We provide strategic legal advice to individuals, families, and businesses — with clarity, integrity, and relentless dedication to your interests.",
     heroBadge:   { stat: "25+ years", desc: "of trusted legal practice across Poland and the EU" },
@@ -24,7 +24,7 @@ const CONFIG_EN = {
   ],
   marqueeItems: ["Corporate Law","Family Law","Real Estate","Criminal Defence","Employment Law","Immigration","Intellectual Property","Civil Litigation"],
   about: {
-    intro: "Founded in 1998, Hartwell & Partners has built its reputation on one principle: every client deserves honest, expert advice — regardless of the complexity of their situation.",
+    intro: "Founded in 1998, Nowak & Partners has built its reputation on one principle: every client deserves honest, expert advice — regardless of the complexity of their situation.",
     body:  "Over the past quarter century, we have guided thousands of clients through their most challenging legal moments. Our multidisciplinary team brings together specialists in every major area of law, working collaboratively to ensure no detail is overlooked. We are proud to serve clients in Warsaw and across Poland, with a network of partner firms throughout the European Union.",
     values: [
       { title: "Integrity above all",     text: "We give you our honest assessment, even when it's not what you hoped to hear." },
@@ -34,7 +34,7 @@ const CONFIG_EN = {
     ],
   },
   team: [
-    { name: "James Hartwell",    role: "Founding Partner",            bio: "James founded the firm after 10 years at a leading Warsaw commercial practice. He specialises in corporate litigation and cross-border M&A transactions." },
+    { name: "James Nowak",    role: "Founding Partner",            bio: "James founded the firm after 10 years at a leading Warsaw commercial practice. He specialises in corporate litigation and cross-border M&A transactions." },
     { name: "Marta Kowalczyk",   role: "Senior Partner",              bio: "Marta leads our family and employment law practice. Recognised in the Legal 500 Poland for three consecutive years, she is known for her empathetic, solutions-focused approach." },
     { name: "Tomasz Wiśniewski", role: "Partner — Criminal Defence",  bio: "Tomasz has defended clients in over 300 criminal proceedings, from white-collar fraud to complex organised crime cases. His preparation and courtroom composure are unmatched." },
     { name: "Alicja Dąbrowska",  role: "Partner — Real Estate",       bio: "Alicja advises on residential and commercial property transactions, zoning, and construction disputes. She has handled portfolios exceeding €200m in value." },
@@ -62,7 +62,7 @@ const CONFIG_EN = {
     { title: "Resolution & follow-through", text: "Whether settled, litigated, or advised upon, we see every matter through to a conclusion — and beyond." },
   ],
   testimonial: {
-    quote:  "Hartwell & Partners handled our company acquisition with exceptional skill and calm. In a process full of complexity and emotion, they were the one constant we could rely on.",
+    quote:  "Nowak & Partners handled our company acquisition with exceptional skill and calm. In a process full of complexity and emotion, they were the one constant we could rely on.",
     author: "CEO, Nowak Logistics Group",
   },
   hours: [
@@ -76,13 +76,13 @@ const CONFIG_EN = {
 
 const CONFIG_PL = {
   firm: {
-    name:        "Hartwell & Partners",
+    name:        "Nowak & Partners",
     tagline:     "Adwokaci i Radcowie Prawni",
     established: "Zał. 1998",
     description: "Kancelaria prawna świadcząca kompleksowe usługi prawne — jasne, rzetelne doradztwo we wszystkich dziedzinach prawa. Łączymy wieloletnie doświadczenie sądowe z nowoczesnym podejściem stawiającym klienta na pierwszym miejscu.",
     address:     "ul. Złota 59, 00-120 Warszawa",
     phone:       "+48 22 456 78 90",
-    email:       "kontakt@hartwellpartners.pl",
+    email:       "kontakt@nowakpartners.pl",
     heroTitle:   "Rzetelne doradztwo. <em>Wyjątkowe</em> rezultaty.",
     heroSubtitle:"Świadczymy strategiczne doradztwo prawne dla osób fizycznych, rodzin i przedsiębiorstw — z jasnością przekazu, rzetelnością i nieustającym zaangażowaniem w ochronę Państwa interesów.",
     heroBadge:   { stat: "25+ lat", desc: "zaufanej praktyki prawniczej w Polsce i UE" },
@@ -95,7 +95,7 @@ const CONFIG_PL = {
   ],
   marqueeItems: ["Prawo gospodarcze","Prawo rodzinne","Nieruchomości","Obrona karna","Prawo pracy","Imigracja","Własność intelektualna","Spory cywilne"],
   about: {
-    intro: "Kancelaria Hartwell & Partners, założona w 1998 roku, budowała swoją reputację na jednej zasadzie: każdy klient zasługuje na rzetelną, fachową poradę — niezależnie od stopnia skomplikowania sprawy.",
+    intro: "Kancelaria Nowak & Partners, założona w 1998 roku, budowała swoją reputację na jednej zasadzie: każdy klient zasługuje na rzetelną, fachową poradę — niezależnie od stopnia skomplikowania sprawy.",
     body:  "Przez ostatnie ćwierć wieku przeprowadziliśmy tysiące klientów przez najtrudniejsze momenty prawne w ich życiu. Nasz multidyscyplinarny zespół skupia specjalistów z każdej głównej dziedziny prawa, którzy ściśle ze sobą współpracują, dbając o każdy szczegół. Z dumą obsługujemy klientów w Warszawie i w całej Polsce, korzystając z sieci kancelarii partnerskich w Unii Europejskiej.",
     values: [
       { title: "Uczciwość przede wszystkim", text: "Dajemy Państwu naszą szczerą ocenę sytuacji, nawet jeśli nie jest to to, co chcielibyście usłyszeć." },
@@ -105,7 +105,7 @@ const CONFIG_PL = {
     ],
   },
   team: [
-    { name: "James Hartwell",    role: "Partner założyciel",                              bio: "James założył kancelarię po 10 latach pracy w czołowej warszawskiej kancelarii handlowej. Specjalizuje się w sporach korporacyjnych i transgranicznych transakcjach M&A." },
+    { name: "James Nowak",    role: "Partner założyciel",                              bio: "James założył kancelarię po 10 latach pracy w czołowej warszawskiej kancelarii handlowej. Specjalizuje się w sporach korporacyjnych i transgranicznych transakcjach M&A." },
     { name: "Marta Kowalczyk",   role: "Starszy partner",                                 bio: "Marta kieruje działem prawa rodzinnego i pracy. Wymieniana w Legal 500 Poland przez trzy kolejne lata, znana jest z empatycznego podejścia nakierowanego na rozwiązania." },
     { name: "Tomasz Wiśniewski", role: "Partner — Prawo karne",                           bio: "Tomasz bronił klientów w ponad 300 postępowaniach karnych — od przestępstw białych kołnierzyków po złożone sprawy zorganizowanej przestępczości. Jego przygotowanie i spokój na sali sądowej nie mają sobie równych." },
     { name: "Alicja Dąbrowska",  role: "Partner — Nieruchomości",                        bio: "Alicja doradza przy transakcjach dotyczących nieruchomości mieszkaniowych i komercyjnych, zagospodarowaniu przestrzennym oraz sporach budowlanych. Obsługiwała portfele o wartości przekraczającej 200 mln euro." },
@@ -133,7 +133,7 @@ const CONFIG_PL = {
     { title: "Rozwiązanie i realizacja",  text: "Niezależnie od tego, czy sprawa zostaje ugodzona, rozstrzygnięta sądownie czy pozostaje w sferze doradztwa, doprowadzamy ją do końca — i dbamy o Państwa interesy po jej zamknięciu." },
   ],
   testimonial: {
-    quote:  "Kancelaria Hartwell & Partners przeprowadziła nas przez przejęcie spółki z wyjątkowym profesjonalizmem i spokojem. W procesie pełnym zawiłości i emocji byli jedyną stałą, na której mogliśmy polegać.",
+    quote:  "Kancelaria Nowak & Partners przeprowadziła nas przez przejęcie spółki z wyjątkowym profesjonalizmem i spokojem. W procesie pełnym zawiłości i emocji byli jedyną stałą, na której mogliśmy polegać.",
     author: "Prezes, Nowak Logistics Group",
   },
   hours: [
@@ -169,7 +169,7 @@ const UI = {
     practiceAreasEyebrow: "Practice areas",
     whereWePractise: "Where we <em>practise</em>",
     whyChooseUs: "Why choose us",
-    hartwellDiff: "The Hartwell <em>difference</em>",
+    NowakDiff: "The Nowak <em>difference</em>",
     howWeWork: "How we work",
     ourProcess: "Our <em>process</em>",
     learnMore: "Learn more →",
@@ -226,7 +226,7 @@ const UI = {
     practiceAreasEyebrow: "Obszary praktyki",
     whereWePractise: "Gdzie <em>działamy</em>",
     whyChooseUs: "Dlaczego my",
-    hartwellDiff: "Wyróżniki kancelarii <em>Hartwell</em>",
+    NowakDiff: "Wyróżniki kancelarii <em>Nowak</em>",
     howWeWork: "Jak pracujemy",
     ourProcess: "Nasz <em>proces</em>",
     learnMore: "Dowiedz się więcej →",
@@ -510,7 +510,7 @@ function render() {
   setEl('areas-practice-eyebrow', u.practiceAreasEyebrow,  false);
   setEl('areas-where-head',       u.whereWePractise,       true);
   setEl('areas-why-eyebrow',      u.whyChooseUs,           false);
-  setEl('areas-why-head',         u.hartwellDiff,          true);
+  setEl('areas-why-head',         u.NowakDiff,          true);
   setEl('areas-how-eyebrow',      u.howWeWork,             false);
   setEl('areas-process-head',     u.ourProcess,            true);
 
