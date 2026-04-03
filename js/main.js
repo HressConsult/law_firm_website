@@ -280,8 +280,8 @@ const ICONS = {
 /* =============================================================
    STATE
    ============================================================= */
-let currentLang = 'en';
-let CONFIG = CONFIG_EN;
+let currentLang = 'pl';
+let CONFIG = CONFIG_PL;
 
 /* =============================================================
    NAVIGATION
@@ -313,6 +313,12 @@ function setLang(lang) {
 
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
   document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
+  const mobEn = document.getElementById('btn-en-mob');
+  const mobPl = document.getElementById('btn-pl-mob');
+  if (mobEn) mobEn.classList.toggle('active', lang === 'en');
+  if (mobPl) mobPl.classList.toggle('active', lang === 'pl');
+  // Close mobile menu after language change
+  document.getElementById('nav-links').removeAttribute('style');
 
   const u = UI[lang];
 
