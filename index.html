@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,17 +21,23 @@
       <div class="nav-logo-sub" id="nav-logo-sub">Attorneys at Law</div>
     </a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#" onclick="showPage('home')"    class="active" id="nav-home"    data-i18n="nav.home">Home</a></li>
-      <li><a href="#" onclick="showPage('about')"   id="nav-about"   data-i18n="nav.about">About</a></li>
-      <li><a href="#" onclick="showPage('areas')"   id="nav-areas"   data-i18n="nav.areas">Practice Areas</a></li>
-      <li><a href="#" onclick="showPage('contact')" id="nav-contact" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="#" onclick="showPage('home')"    class="active" id="nav-home"    data-i18n="nav.home">Strona główna</a></li>
+      <li><a href="#" onclick="showPage('about')"   id="nav-about"   data-i18n="nav.about">O nas</a></li>
+      <li><a href="#" onclick="showPage('areas')"   id="nav-areas"   data-i18n="nav.areas">Obszary praktyki</a></li>
+      <li><a href="#" onclick="showPage('contact')" id="nav-contact" data-i18n="nav.contact">Kontakt</a></li>
+      <li class="nav-lang-mobile">
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btn-pl-mob" onclick="setLang('pl')">PL</button>
+          <button class="lang-btn"        id="btn-en-mob" onclick="setLang('en')">EN</button>
+        </div>
+      </li>
     </ul>
-    <div class="nav-cta-wrap" style="display:flex;align-items:center;gap:16px;">
+    <div class="nav-cta-wrap">
+      <a class="btn btn-dark" href="#" onclick="showPage('contact')" id="nav-cta-btn">Bezpłatna konsultacja</a>
       <div class="lang-switcher">
-        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn"        id="btn-pl" onclick="setLang('pl')">PL</button>
+        <button class="lang-btn active" id="btn-pl" onclick="setLang('pl')">PL</button>
+        <button class="lang-btn"        id="btn-en" onclick="setLang('en')">EN</button>
       </div>
-      <a class="btn btn-dark" href="#" onclick="showPage('contact')" id="nav-cta-btn">Free consultation</a>
     </div>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
